@@ -1,3 +1,3 @@
-### 6.0.1
+### 7.0.0
 
-- Fix Dependencies
+- Update to 1.21
