@@ -16,7 +16,6 @@ public class FarmBlockMixin {
 
     @Inject(method = "fallOn", at = @At("HEAD"), cancellable = true)
     public void onLandedUpon(Level level, BlockState blockState, BlockPos blockPos, Entity entity, float f, CallbackInfo ci) {
-        System.out.println("TrampleStopperMixin");
         if (TrampleConfig.CONFIG.get().type().getFunction().apply(entity)) {
             ci.cancel();
         }
